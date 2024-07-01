@@ -6,7 +6,10 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
+import java.time.Instant;
 import java.util.UUID;
 
 @Entity
@@ -14,7 +17,7 @@ import java.util.UUID;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User extends BaseDto{
+public class User {
 
     @Id
     @Column(name = "id")
@@ -29,4 +32,12 @@ public class User extends BaseDto{
 
     @Column(name = "email_id")
     private String emailId;
+
+    @UpdateTimestamp
+    @Column(name = "updated_at")
+    Instant updatedAt;
+
+    @CreationTimestamp
+    @Column(name = "created_at")
+    Instant createdAt;
 }
