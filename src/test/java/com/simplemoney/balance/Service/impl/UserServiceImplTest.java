@@ -27,7 +27,7 @@ public class UserServiceImplTest {
     private UserUtils userUtils;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
         userServiceImpl = new UserServiceImpl();
         userUtils = new UserUtils();
         userRepository = Mockito.mock(UserRepository.class);

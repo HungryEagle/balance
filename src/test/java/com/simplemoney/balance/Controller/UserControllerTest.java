@@ -31,7 +31,7 @@ public class UserControllerTest {
     private UserUtils userUtils;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
         userController = new UserController();
         userUtils = new UserUtils();
         userService = Mockito.mock(UserService.class);
