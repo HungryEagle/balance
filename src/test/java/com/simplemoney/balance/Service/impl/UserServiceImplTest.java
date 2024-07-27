@@ -1,6 +1,6 @@
 package com.simplemoney.balance.Service.impl;
 
-import com.simplemoney.balance.Dto.User;
+import com.simplemoney.balance.Dto.db.User;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Repository.UserRepository;
 import com.simplemoney.balance.utils.UserUtils;

@@ -1,6 +1,6 @@
 package com.simplemoney.balance.Service.impl;
 
-import com.simplemoney.balance.Dto.User;
+import com.simplemoney.balance.Dto.db.User;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Dto.request.UserRequest;
 import com.simplemoney.balance.Mapper.UserMapper;
