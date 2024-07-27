@@ -1,6 +1,6 @@
 package com.simplemoney.balance.utils;
 
-import com.simplemoney.balance.Dto.User;
+import com.simplemoney.balance.Dto.UserEntity;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Dto.request.UserRequest;
 
@@ -17,12 +17,12 @@ public class UserUtils {
         return userRequest;
     }
 
-    public User getUser() {
-        User user = new User();
-        user.setUsername(USERNAME);
-        user.setPassword(PASSWORD);
-        user.setEmailId(EMAIL_ID);
-        return user;
+    public UserEntity getUser() {
+        UserEntity userEntity = new UserEntity();
+        userEntity.setUsername(USERNAME);
+        userEntity.setPassword(PASSWORD);
+        userEntity.setEmailId(EMAIL_ID);
+        return userEntity;
     }
 
     public UserResponse getUserResponse() {

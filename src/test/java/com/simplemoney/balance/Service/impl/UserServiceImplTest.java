@@ -1,6 +1,6 @@
 package com.simplemoney.balance.Service.impl;
 
-import com.simplemoney.balance.Dto.User;
+import com.simplemoney.balance.Dto.UserEntity;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Repository.UserRepository;
 import com.simplemoney.balance.utils.UserUtils;
@@ -36,14 +36,14 @@ public class UserServiceImplTest {
 
     @Test
     public void createUser() {
-        Mockito.when(userRepository.save(Mockito.any(User.class))).thenReturn(userUtils.getUser());
+        Mockito.when(userRepository.save(Mockito.any(UserEntity.class))).thenReturn(userUtils.getUser());
         UserResponse userResponse = userServiceImpl.createUser(userUtils.getUserRequest());
         Assert.assertEquals(userResponse.getUsername(), userUtils.getUser().getUsername());
     }
 
     @Test
     public void createUserWithException() {
-        Mockito.when(userRepository.save(Mockito.any(User.class))).thenThrow(new RuntimeException());
+        Mockito.when(userRepository.save(Mockito.any(UserEntity.class))).thenThrow(new RuntimeException());
         UserResponse userResponse = userServiceImpl.createUser(userUtils.getUserRequest());
         assertNull(userResponse);
     }
