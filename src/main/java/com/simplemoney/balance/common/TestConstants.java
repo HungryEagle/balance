@@ -1,6 +1,6 @@
 package com.simplemoney.balance.common;
 
-public class Constants {
+public class TestConstants {
     public static final String USERNAME = "username";
     public static final String PASSWORD = "password";
     public static final String EMAIL_ID = "emailId";

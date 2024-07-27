@@ -12,7 +12,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.test.util.ReflectionTestUtils;
 
-import static com.simplemoney.balance.common.Constants.*;
+import static com.simplemoney.balance.common.TestConstants.*;
 import static org.junit.Assert.*;
 
 

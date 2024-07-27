@@ -4,8 +4,8 @@ import com.simplemoney.balance.Dto.User;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Dto.request.UserRequest;
 
-import static com.simplemoney.balance.common.Constants.*;
-import static com.simplemoney.balance.common.Constants.EMAIL_ID;
+import static com.simplemoney.balance.common.TestConstants.*;
+import static com.simplemoney.balance.common.TestConstants.EMAIL_ID;
 
 public class UserUtils {
 

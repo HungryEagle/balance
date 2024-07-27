@@ -17,8 +17,8 @@ import org.springframework.test.util.ReflectionTestUtils;
 
 import java.util.Objects;
 
-import static com.simplemoney.balance.common.Constants.USERNAME;
-import static com.simplemoney.balance.common.Constants.USER_SERVICE;
+import static com.simplemoney.balance.common.TestConstants.USERNAME;
+import static com.simplemoney.balance.common.TestConstants.USER_SERVICE;
 
 public class UserControllerTest {
 
