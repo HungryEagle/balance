@@ -1,6 +1,6 @@
 package com.simplemoney.balance.Repository;
 
-import com.simplemoney.balance.Dto.Role;
+import com.simplemoney.balance.Dto.db.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

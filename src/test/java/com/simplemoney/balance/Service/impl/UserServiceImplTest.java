@@ -1,7 +1,7 @@
 package com.simplemoney.balance.Service.impl;
 
-import com.simplemoney.balance.Dto.Role;
-import com.simplemoney.balance.Dto.UserEntity;
+import com.simplemoney.balance.Dto.db.Role;
+import com.simplemoney.balance.Dto.db.UserEntity;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Repository.RoleRepository;
 import com.simplemoney.balance.Repository.UserRepository;
@@ -12,7 +12,6 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.mockito.stubbing.Answer;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import static com.simplemoney.balance.common.TestConstants.*;
 import static org.junit.Assert.*;

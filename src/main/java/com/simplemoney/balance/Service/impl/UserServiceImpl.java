@@ -1,7 +1,7 @@
 package com.simplemoney.balance.Service.impl;
 
-import com.simplemoney.balance.Dto.Role;
-import com.simplemoney.balance.Dto.UserEntity;
+import com.simplemoney.balance.Dto.db.Role;
+import com.simplemoney.balance.Dto.db.UserEntity;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Dto.request.LoginRequest;
 import com.simplemoney.balance.Dto.request.UserRequest;
@@ -10,7 +10,6 @@ import com.simplemoney.balance.Repository.RoleRepository;
 import com.simplemoney.balance.Repository.UserRepository;
 import com.simplemoney.balance.Service.UserService;
 import com.simplemoney.balance.common.Constants;
-import com.simplemoney.balance.security.SecurityConfig;
 import lombok.NoArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

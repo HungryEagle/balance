@@ -1,4 +1,4 @@
-package com.simplemoney.balance.Dto;
+package com.simplemoney.balance.Dto.db;
 
 
 import jakarta.persistence.*;

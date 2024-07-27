@@ -1,6 +1,6 @@
 package com.simplemoney.balance.Mapper;
 
-import com.simplemoney.balance.Dto.UserEntity;
+import com.simplemoney.balance.Dto.db.UserEntity;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Dto.request.UserRequest;
 import org.mapstruct.Mapper;
