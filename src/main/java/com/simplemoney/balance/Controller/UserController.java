@@ -26,7 +26,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/{username}", method = RequestMethod.GET)
-    public ResponseEntity<Response<UserResponse>> createUser(@PathVariable String username) {
+    public ResponseEntity<Response<UserResponse>> fetchUser(@PathVariable String username) {
         UserResponse userResponse = userService.fetchUser(username);
         if (null == userResponse) {
             return new ResponseEntity<>(new Response<>(false, null, "User not found"), HttpStatus.NO_CONTENT);
