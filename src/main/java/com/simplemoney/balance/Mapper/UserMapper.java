@@ -1,6 +1,6 @@
 package com.simplemoney.balance.Mapper;
 
-import com.simplemoney.balance.Dto.db.User;
+import com.simplemoney.balance.Dto.db.UserEntity;
 import com.simplemoney.balance.Dto.reponse.UserResponse;
 import com.simplemoney.balance.Dto.request.UserRequest;
 import org.mapstruct.Mapper;
@@ -11,7 +11,7 @@ public interface UserMapper {
 
     UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
-    User userRequestToUser(UserRequest userRequest);
+    UserEntity userRequestToUser(UserRequest userRequest);
 
-    UserResponse userToUserResponse(User user);
+    UserResponse userToUserResponse(UserEntity userEntity);
 }
