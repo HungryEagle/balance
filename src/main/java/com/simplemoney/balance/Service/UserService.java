@@ -1,6 +1,7 @@
 package com.simplemoney.balance.Service;
 
 import com.simplemoney.balance.Dto.reponse.UserResponse;
+import com.simplemoney.balance.Dto.request.LoginRequest;
 import com.simplemoney.balance.Dto.request.UserRequest;
 
 public interface UserService {
@@ -8,4 +9,6 @@ public interface UserService {
     UserResponse createUser(UserRequest userRequest);
 
     UserResponse fetchUser(String username);
+
+    String loginUser(LoginRequest loginRequest);
 }
